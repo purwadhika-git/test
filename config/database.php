@@ -62,8 +62,9 @@ return [
             'password' => env('DB_PASSWORD', ''),
             'charset' => 'utf8',
             'prefix' => '',
-            'schema' => 'public',
-            'sslmode' => 'prefer',
+            // 'schema' => 'public',
+            // 'sslmode' => 'prefer',
+            'schema'   => env('DB_PGSQL_SCHEMA','public'),
         ],
 
     ],
